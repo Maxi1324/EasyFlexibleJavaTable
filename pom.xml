@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>easyflex</groupId>
-    <artifactId>easy-flexible-java-table</artifactId>
+    <groupId>com.github.Maxi1324</groupId>
+    <artifactId>EasyFlexibleJavaTable</artifactId>
     <version>1.0.1</version>
     <name>EasyFlexibleJavaTable</name>
     <description>Flexible text table rendering library for Java.</description>
