@@ -3,16 +3,16 @@
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/Maxi1324/EasyFlexibleJavaTable</url>
     </repository>
 </repositories>
-```
 
-```xml
 <dependency>
-    <groupId>com.github.Maxi1324</groupId>
-    <artifactId>EasyFlexibleJavaTable</artifactId>
-    <version>v1.0.0</version>
+    <groupId>easyflex</groupId>
+    <artifactId>easy-flexible-java-table</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
+
+
