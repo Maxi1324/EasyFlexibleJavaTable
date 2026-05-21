@@ -6,7 +6,7 @@
 
     <groupId>com.github.Maxi1324</groupId>
     <artifactId>EasyFlexibleJavaTable</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <name>EasyFlexibleJavaTable</name>
     <description>Flexible text table rendering library for Java.</description>
     <url>https://github.com/Maxi1324/EasyFlexibleJavaTable</url>

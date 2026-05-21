@@ -37,6 +37,29 @@ public class EasyFlexibleTable {
         return this;
     }
 
+    /// addCell
+    ///
+    /// Adds a cell with a fixed minimum width.
+    /// @param content the cell content
+    /// @param fixedWidth minimum width for the cell content
+    /// @return this builder
+    public EasyFlexibleTable addCell(String content, int fixedWidth) {
+        currentCells.add(new Cell(content, fixedWidth, false));
+        return this;
+    }
+
+    /// addCell
+    ///
+    /// Adds a cell with a fixed minimum width and optional border emphasis.
+    /// @param content the cell content
+    /// @param fixedWidth minimum width for the cell content
+    /// @param thick whether thick borders should be used
+    /// @return this builder
+    public EasyFlexibleTable addCell(String content, int fixedWidth, boolean thick) {
+        currentCells.add(new Cell(content, fixedWidth, thick));
+        return this;
+    }
+
     /// addHorizontalLine
     ///
     /// Adds a horizontal separator row.
