@@ -1,18 +1,29 @@
 # EasyFlexibleJavaTable
 
+Flexible text table rendering library for Java.
+
+## Usage
+
+Add the JitPack repository to your build file:
+
 ```xml
 <repositories>
     <repository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/Maxi1324/EasyFlexibleJavaTable</url>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
     </repository>
 </repositories>
+```
 
+Add the dependency:
+
+```xml
 <dependency>
-    <groupId>easyflex</groupId>
-    <artifactId>easy-flexible-java-table</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.github.Maxi1324</groupId>
+    <artifactId>EasyFlexibleJavaTable</artifactId>
+    <version>1.0.1</version>
 </dependency>
 ```
+
 
 
