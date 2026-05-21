@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>easyflex</groupId>
-    <artifactId>EasyFlexibleJavaTable</artifactId>
+    <artifactId>easy-flexible-java-table</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>EasyFlexibleJavaTable</name>
     <description>Flexible text table rendering library for Java.</description>

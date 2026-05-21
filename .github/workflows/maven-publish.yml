@@ -1,9 +1,12 @@
-# Builds the Maven project on pushes and pull requests, and publishes packages from main.
+# Builds the Maven project on pushes and pull requests, and publishes packages on releases.
 name: Maven Build And Publish
 
 on:
   push:
   pull_request:
+  release:
+    types:
+      - published
 
 jobs:
   build:
@@ -27,7 +30,7 @@ jobs:
 
   publish:
     name: Publish Package
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'release'
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -49,6 +52,9 @@ jobs:
           server-id: github
           server-username: GITHUB_ACTOR
           server-password: GITHUB_TOKEN
+
+      - name: Set release version from tag
+        run: mvn --batch-mode versions:set -DnewVersion=${GITHUB_REF_NAME#v} -DgenerateBackupPoms=false
 
       - name: Publish to GitHub Packages
         run: mvn --batch-mode deploy
