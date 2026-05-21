@@ -34,7 +34,6 @@ jobs:
         run: mvn --batch-mode -ntp verify
 
   publish:
-    if: github.event_name == 'release' || github.event_name == 'workflow_dispatch'
     name: Publish to GitHub Packages
     needs: build
     runs-on: ubuntu-latest
